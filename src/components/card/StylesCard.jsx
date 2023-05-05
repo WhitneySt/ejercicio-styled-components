@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const StylesCard = styled.article`
-  width: 150px;
+  width: 160px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 5px;
-  padding: 15px;
+  padding: 2.5em 1em 1em;
   border-radius: 5px;
   font-size: 0.75rem;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
