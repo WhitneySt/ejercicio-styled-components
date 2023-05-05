@@ -1,10 +1,12 @@
 import React from 'react'
 import { StylesButton1, StylesButton2 } from '../navigationBar/StyleNavigation';
-import { StylesBannerText } from './StylesBanner';
+import { StylesBanner, StylesBannerText, StylesCards } from './StylesBanner';
+import { agents } from '../../data/data';
+import Card from '../card/Card';
 
 const Banner = () => {
   return (
-    <div>
+    <StylesBanner>
       <StylesBannerText>
         <h1>We support your challenge in new areas.</h1>
         <p>
@@ -16,8 +18,12 @@ const Banner = () => {
           <StylesButton1>Explore</StylesButton1>
         </div>
       </StylesBannerText>
-      <section></section>
-    </div>
+      <StylesCards>
+        {agents.map((item) => (
+          <Card key={item.id} agent={item} />
+        ))}
+      </StylesCards>
+    </StylesBanner>
   );
 }
 

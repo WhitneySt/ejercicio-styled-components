@@ -17,6 +17,8 @@ body{
     padding: 70px 100px 0px;
     box-sizing: border-box;
 }
+
+
 `;
 
 export default GlobalStyles;
