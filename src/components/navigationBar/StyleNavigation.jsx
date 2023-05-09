@@ -10,6 +10,12 @@ export const StylesNav = styled.nav`
     gap: 15px;
     align-items: center;
   }
+
+  @media screen and (max-width: 970px){
+    li{
+      display: none;
+    }
+  }
 `;
 export const StylesButton1 = styled.button`
   padding: 10px 15px;
@@ -33,5 +39,8 @@ export const StylesButton2 = styled.button`
   :hover {
     background-color: transparent;
     color: #24b26b;
+  }
+  @media screen and (max-width: 970px){
+    display: none;
   }
 `;

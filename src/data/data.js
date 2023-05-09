@@ -49,3 +49,30 @@ export const agents = [
     description: "We specialize in construction related jobs.",
   },
 ];
+
+export const jobs = [
+  {
+    id: 1,
+    title: "Leader of iOS engineers for mobility services",
+    location: "California",
+    role: "Engineer",
+  },
+  {
+    id: 2,
+    title: "Candidate for Sales Manager of HR-related services",
+    location: "Oregon",
+    role: "Sales Manager",
+  },
+  {
+    id: 3,
+    title: "Head of marketing for electronic payment services",
+    location: "Florida",
+    role: "Marketer",
+  },
+  {
+    id: 4,
+    title: "CFO of a semiconductor manufacturing company",
+    location: "Texas",
+    role: "CFO",
+  },
+];

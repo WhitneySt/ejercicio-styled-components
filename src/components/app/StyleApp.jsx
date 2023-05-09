@@ -18,7 +18,20 @@ body{
     box-sizing: border-box;
 }
 
-
+@media screen and (max-width: 970px) {
+    html{
+        font-size: 14px;
+    }
+    body{
+        padding: 35px 50px 0;
+    }
+}
+@media screen and (max-width: 460px) {
+   
+    body{
+        padding: 15px 20px 0;
+    }
+}
 `;
 
 export default GlobalStyles;

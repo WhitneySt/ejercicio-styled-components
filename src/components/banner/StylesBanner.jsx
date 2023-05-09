@@ -17,6 +17,17 @@ export const StylesBannerText = styled.div`
     display: flex;
     gap: 0.5rem;
   }
+  @media screen and (max-width: 380px) {
+    align-items:center;
+    h1 {
+      font-size: 2.3rem;
+      line-height: 3rem;
+      text-align: center;
+    }
+    p{
+      font-size:1rem;
+    }
+  }
 `;
 
 export const StylesCards = styled.section`
@@ -24,6 +35,9 @@ export const StylesCards = styled.section`
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 15px;
+  @media screen and (max-width: 1057px) {
+    justify-content: space-around;
+  }
 `;
 
 export const StylesBanner = styled.div`
@@ -32,4 +46,7 @@ export const StylesBanner = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+  @media screen and (max-width: 1057px) {
+    flex-direction: column;
+  }
 `;

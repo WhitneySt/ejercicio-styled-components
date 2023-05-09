@@ -2,6 +2,7 @@ import React from "react";
 import companies from "./../../assets/images/companies.png";
 import Search from "../search/Search";
 import { StylesCompaniesImage, StylesMain } from "./StylesMain";
+import JobCards from "../jobCards/JobCards";
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
         </figure>
       </StylesCompaniesImage>
       <Search />
+      <JobCards/>
     </StylesMain>
   );
 };

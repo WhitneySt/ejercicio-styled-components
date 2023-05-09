@@ -1,25 +1,25 @@
-import React from 'react'
+import React from "react";
 import { StylesNav, StylesButton1, StylesButton2 } from "./StyleNavigation";
 
 const NavigationBar = () => {
-    const links = [
-        {
-            name: "Job Search",
-            route: ""
-        },
-        {
-            name: "About",
-            route: ""
-        },
-        {
-            name: "Pricing",
-            route: ""
-        },
-        {
-            name: "Contact",
-            routes: ""
-        }
-    ]
+  const links = [
+    {
+      name: "Job Search",
+      route: "",
+    },
+    {
+      name: "About",
+      route: "",
+    },
+    {
+      name: "Pricing",
+      route: "",
+    },
+    {
+      name: "Contact",
+      routes: "",
+    },
+  ];
   return (
     <StylesNav>
       <figure>
@@ -29,15 +29,11 @@ const NavigationBar = () => {
         {links.map((item, index) => (
           <li key={`${item.name}-${index}`}>{item.name}</li>
         ))}
-        <li>
-          <StylesButton1>Log in</StylesButton1>
-        </li>
-        <li>
-          <StylesButton2>Try it free</StylesButton2>
-        </li>
+        <StylesButton1>Log in</StylesButton1>
+        <StylesButton2>Try it free</StylesButton2>
       </ul>
     </StylesNav>
   );
-}
+};
 
-export default NavigationBar
+export default NavigationBar;
